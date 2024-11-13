@@ -35,3 +35,6 @@ public class Sale {
         this.totalAmount = totalAmount;
     }
 }
+
+
+

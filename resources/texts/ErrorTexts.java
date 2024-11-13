@@ -33,3 +33,6 @@ public class Messages {
         System.out.println("Erro: Fundos insuficientes para fechar o caixa com o valor especificado.");
     }
 }
+
+
+

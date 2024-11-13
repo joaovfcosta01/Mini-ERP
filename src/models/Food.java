@@ -21,3 +21,7 @@ public class Food extends Product {
         System.out.println("Food: " + name + " | Code: " + code + " | Price: $" + price + " | Validity: " + validityDays + " days");
     }
 }
+
+
+
+

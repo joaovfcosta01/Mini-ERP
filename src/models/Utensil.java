@@ -21,3 +21,6 @@ public class Utensil extends Product {
         System.out.println("Utensil: " + name + " | Code: " + code + " | Price: $" + price + " | Validity: " + validityDays + " days");
     }
 }
+
+
+

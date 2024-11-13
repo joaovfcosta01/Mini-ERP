@@ -21,3 +21,7 @@ public class Electronic extends Product {
         System.out.println("Electronic: " + name + " | Code: " + code + " | Price: $" + price + " | Warranty: " + warrantyMonths + " months");
     }
 }
+
+
+
+
