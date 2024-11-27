@@ -34,6 +34,16 @@ public class Sale {
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
+
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void addProduct(Product product, int quantity, double productTotal) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
 

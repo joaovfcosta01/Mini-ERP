@@ -1,27 +1,30 @@
 package models;
 
 public class Electronic extends Product {
-    private int warrantyMonths;
+    private Integer warrantyMonths;
 
-    public Electronic(String name, String code, double price, int warrantyMonths) {
-        super(name, code, price);
+    public Electronic(int id, String name, int code, double price, int stock, Integer warrantyMonths) {
+        // Chamando o construtor da classe Product e passando null para o expirationDate
+        super(name, code, price, stock, null, warrantyMonths); // Null para validade (sem validade)
         this.warrantyMonths = warrantyMonths;
     }
 
-    public int getWarrantyMonths() {
+    public Integer getWarrantyMonths() {
         return warrantyMonths;
     }
 
-    public void setWarrantyMonths(int warrantyMonths) {
+    public void setWarrantyMonths(Integer warrantyMonths) {
         this.warrantyMonths = warrantyMonths;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("Electronic: " + name + " | Code: " + code + " | Price: $" + price + " | Warranty: " + warrantyMonths + " months");
+        System.out.println(
+            "Electronic: " + getName() +
+            " | Code: " + getCode() +
+            " | Price: $" + getPrice() +
+            " | Stock: " + getStock() +
+            " | Warranty: " + (warrantyMonths != null ? warrantyMonths + " months" : "N/A")
+        );
     }
 }
-
-
-
-

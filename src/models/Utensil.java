@@ -3,8 +3,10 @@ package models;
 public class Utensil extends Product {
     private int validityDays;
 
-    public Utensil(String name, String code, double price, int validityDays) {
-        super(name, code, price);
+    // Chamando o construtor de Product com os parâmetros corretos
+    public Utensil(int id, String name, String code, double price, int stock, int validityDays) {
+        // Chamando o construtor de Product com todos os parâmetros necessários
+        super(id, name, code, price, stock, null, null); // Passando null para expirationDate e warrantyMonths, pois não são necessários
         this.validityDays = validityDays;
     }
 
@@ -18,9 +20,6 @@ public class Utensil extends Product {
 
     @Override
     public void displayInfo() {
-        System.out.println("Utensil: " + name + " | Code: " + code + " | Price: $" + price + " | Validity: " + validityDays + " days");
+        System.out.println("Utensil: " + getName() + " | Code: " + getCode() + " | Price: $" + getPrice() + " | Validity: " + validityDays + " days");
     }
 }
-
-
-
